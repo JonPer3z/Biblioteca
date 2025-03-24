@@ -15,5 +15,9 @@ public class BancoDeLivros {
     public void insert(Livro l) {
         livros.add(l);
     }
+
+    public List<Livro> findAll(){
+        return new ArrayList<>(livros);
+    }
 }
 
