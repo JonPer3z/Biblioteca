@@ -11,4 +11,8 @@ public class ClienteController {
     public void inserirNoBanco(Cliente c){
         bc.insert(c);
     }
+
+    public List<Cliente> pegarTodosOsClientes(){
+        return bc.findAll();
+    }
 }

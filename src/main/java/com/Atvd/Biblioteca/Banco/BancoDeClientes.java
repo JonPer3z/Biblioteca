@@ -15,4 +15,8 @@ public class BancoDeClientes {
     public void insert(Cliente c){
         clientes.add(c);
     }
+
+    public List<Cliente> findAll(){
+        return new ArrayList<>(clientes);
+    }
 }

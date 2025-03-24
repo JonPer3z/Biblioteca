@@ -19,4 +19,9 @@ public class ClienteView {
         return "Cliente Inserido com sucesso";
     }
 
+    @GetMapping("/Cliente")
+    public List<Cliente> getAllCliente(){
+        return cc.pegarTodosOsClientes();
+    }
+
 }
